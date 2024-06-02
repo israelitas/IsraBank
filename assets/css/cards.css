@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: .2px solid var(--black);
+    border-radius: .6rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card-title {
+    padding: 1rem 0;
+}
+
+.card-description {
+    text-align: left;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: var(--white);
+    width: fit-content;
+    border: none;
+}
+
+.cta a {
+    padding-right: .4rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.175rem;
+}
+
+.cta .material-symbols-outlined {
+    color: var(--primary-color);
+}
+
+.cards .saiba-mais {
+    margin: 1rem;
+    text-align: center;
+}
+
+.cards .saiba-mais a {
+    color: var(--primary-color);
+}

@@ -1,0 +1,22 @@
+.telefones h5 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.telefone-opcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.telefone-opcoes span {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.telefone-opcoes p {
+    margin: .5rem 0;
+    font-size: 1.3rem;
+}

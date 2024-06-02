@@ -1,0 +1,45 @@
+.swiper-section {
+    background-color: var(--gray);
+}
+.swiper {
+    width: 90%;
+    height: 90%;
+    
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--gray);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.swiper-slide h4 {
+    font-weight: 600;
+    margin-top: .8rem;
+    color: var(--primary-color);
+}
+
+.swiper-slide p {
+    margin-top: .7rem;
+    font-size: .8rem;
+    text-align: justify;
+    padding: 0 2rem;
+}
+
+.swiper-btn {
+    color: var(--black);
+}
+

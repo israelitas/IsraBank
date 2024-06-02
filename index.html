@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Menu Responsivo</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <p><span>Isra</span>Bank</p>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Seviços</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <div class="buttons">
+                <div class="login-button">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+                <div class="login-button">
+                    <button><a href="#">Vire um <span>Isra</span></a></button>
+                </div>
+            </div>
+
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Seviços</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Vire um Isra</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="principal">
+            <h1>Bem vindo ao banco que mais cresce no Brasil.</h1>
+            <p>Transformando suas metas em realidade. Conectando você às melhores oportunidades financeiras.</p>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <span class="material-symbols-outlined">paid</span>
+                <h2 class="card-title">Assistente de pagamento</h2>
+                <p class="card-description">O "Assistente de pagamento" é uma ferramenta que ajuda na gestão e execução de transações financeiras, organizando contas e facilitando o controle de despesas.</p>
+                    <button class="cta">
+                        <a href="#">Saiba mais</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+            </div>
+
+            <div class="card">
+                <span class="material-symbols-outlined">manage_accounts</span>
+                <h2 class="card-title">Gerenciamento de Conta Corrente</h2>
+                <p class="card-description">Serviço que permite a gestão de depósitos, saques, transferências e pagamentos, oferecendo acesso fácil e seguro às transações diárias.</p>
+                    <button class="cta">
+                        <a href="#">Saiba mais</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+            </div>
+
+            <div class="card">
+                <span class="material-symbols-outlined">wallet</span>
+                <h2 class="card-title">Investimentos Personalizados</h2>
+                <p class="card-description"> Oferece consultoria e produtos financeiros diversificados para ajudar clientes a investir de acordo com seus objetivos e perfil de risco.</p>
+                    <button class="cta">
+                        <a href="#">Saiba mais</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+            </div>
+
+            <div class="card">
+                <span class="material-symbols-outlined">payments</span>
+                <h2 class="card-title">Empréstimos e Financiamentos</h2>
+                <p class="card-description">OFornece crédito pessoal, empresarial e hipotecário, com condições e prazos adaptados às necessidades dos clientes.</p>
+                    <button class="cta">
+                        <a href="#">Saiba mais</a>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+            </div>
+            <p class="saiba-mais">Para saber mais sobre essas e outra vantagens acesse nosso <a href="#">blog</a>.</p>
+        </section>
+
+        <section class="about">
+            <div class="card-about">
+                <img src="assets/img/ft1.png" alt="">
+                <h3>Assistência Bancária Digital</h3>
+                <p>
+                    Gerencie suas finanças com facilidade e segurança de casa ou do escritório usando nosso serviço de Assistência Bancária Digital Personalizada.</p>
+                <button class="cta-about">
+                    <a href="#">Saiba mais</a>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="swiper-section">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/ft3.png" alt="">
+                        <h4>Exclusividade sem Limites</h4>
+                        <p>Viva o luxo com o Cartão Black e desfrute diversos benefícios.</p>
+                        <button class="cta-about">
+                            <a href="#">Saiba mais</a>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/ft2.png" alt="">
+                        <h4>Poupança+</h4>
+                        <p>Com o poupança+, seu dinheiro pode render até 120% do CDI.</p>
+                        <button class="cta-about">
+                            <a href="#">Saiba mais</a>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">                        <img src="assets/img/ft4.png" alt="">
+                        <h4>Asas para Voar</h4>
+                        <p>Transforme suas compras do dia a dia em aventuras incríveis. Ganhe milhas aéreas sempre que usar seu cartão de crédito.</p>
+                        <button class="cta-about">
+                            <a href="#">Saiba mais</a>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-btn swiper-button-next"></div>
+                <div class="swiper-btn swiper-button-prev"></div>
+            </div>
+        </section>
+        <footer>
+            <div class="news">
+                <h5>Increva-se na nossa newsletter e fique sabendo de todas as novidades:</h5>
+                <form id="newsletterForm">
+                    <input type="email" id="emailInput" placeholder="Digite seu email">
+                    <button type="submit" id="subscribeButton" disabled>Inscreva-se</button>
+                </form>
+
+                <div class="contato">
+                    <div class="telefones">
+                        <h5>Fale com a gente</h5>
+                        <div class="telefone-opcoes">
+                            <span>Capitais e regiões metropolitanas</span>
+                            <p>4002 8922</p>
+                            <span>Demais localidades</span>
+                            <p>0800 634 2118</p>
+                            <span>meajuda@israbank.com.br</span>
+                        </div>
+                        <h5 class="ouvidoria">
+                            <span>0800 856 2812</span>
+                            <span>ouvidoria@israbank.com.br</span>
+                        </h5>
+                    </div>
+                    
+                <div class="sociais">
+                    <p>Nossas redes sociais:</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+
+                
+                    
+
+
+                </div>
+            </div>    
+        </footer>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/validaForm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    </script>
+    <script src="https://kit.fontawesome.com/1917902a76.js" crossorigin="anonymous"></script>
+</body>
+</html>

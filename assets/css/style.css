@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+@import 'header.css';
+@import 'principal.css';
+@import 'cards.css';
+@import 'about.css';
+@import 'swiper.css';
+@import 'footer.css';
+@import 'contato.css';
+
+:root {
+    --bg-color: #FAEADD;
+    --primary-color: #F88D37;
+    --secondary-color: #3f3d3a;
+    --black: #1b150f;
+    --shadow: #464646;
+    --white: #FFFFFF;
+    --hover-secondary-color: #8a837e;
+    --gray: #ececec;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
