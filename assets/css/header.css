@@ -86,8 +86,8 @@ header {
     display: none;
 }
 
-/*parte responsiva */
-@media screen and (max-width: 730px) {
+/* parte responsiva  celular */
+@media screen and (max-width: 480px) {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -132,5 +132,21 @@ header {
     }
     .open {
         display: block;
+    }
+}
+
+/* parte responsiva tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .nav-bar {
+        display: flex;
+        justify-content: center;
+        padding: 1rem
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        margin-left: 1rem;
     }
 }

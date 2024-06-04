@@ -65,3 +65,55 @@ footer {
     color: #9e540a;
 }
 
+@media (min-width: 481px) and (max-width: 1023px) {
+    .news h5 {
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+    }
+
+    #newsletterForm input {
+        width: 600px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    #newsletterForm button {
+        width: 300px;
+        font-size: 1.5rem;
+        border-radius: 40px;
+    }
+
+    .sociais p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .news h5 {
+        font-size: 1.3rem;
+    }
+    #newsletterForm input {
+        width: 800px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    #newsletterForm button {
+        width: 300px;
+        font-size: 1.4rem;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        color: var(--shadow)
+    }
+
+    #newsletterForm button:hover {
+        background-color: var(--primary-color);
+        color: var(--white)
+    }
+
+    .telefone-opcoes {
+        display: flex;
+        justify-content: center;
+    }
+}

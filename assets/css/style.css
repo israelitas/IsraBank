@@ -17,12 +17,14 @@
     --white: #FFFFFF;
     --hover-secondary-color: #8a837e;
     --gray: #ececec;
+    --laranja-2:#f7af52;
 }
 
 * {
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 

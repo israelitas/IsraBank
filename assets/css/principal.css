@@ -18,3 +18,33 @@
     color: var(--white);
     font-weight: 500;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .principal {
+        padding: 3rem
+    }
+
+    .principal h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .principal {
+        background-image: url('../img/bg-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 1px ;
+        height: 65vh;
+    }
+
+    .principal h1 {
+        font-size: 3rem;
+        padding-top: 10%
+    }
+
+    .principal p {
+        margin-left: 4.5rem;
+        font-size: 1.3rem;
+    }
+}

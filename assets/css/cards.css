@@ -43,3 +43,74 @@
 .cards .saiba-mais a {
     color: var(--primary-color);
 }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+    }
+
+    .saiba-mais {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Quatro colunas com largura igual */
+        gap: 20px; /* Espaçamento entre os cards */
+        justify-content: center; /* Centraliza os cards horizontalmente */
+    }
+    
+    .card {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto; /* Linhas para o ícone, título, descrição e botão */
+        gap: 10px; /* Espaçamento entre os elementos dentro do card */
+        padding: 20px;
+        border: 1px solid #ccc; /* Adicione uma borda para visualização */
+    }
+    
+    .card .cta {
+        display: flex;
+        align-items: center; /* Alinha os itens verticalmente */
+        justify-self: end; /* Alinha o botão no final do card */
+    }
+    
+    .card .cta a {
+        text-decoration: none;
+        color: inherit; /* Herda a cor do texto do elemento pai */
+    }
+    
+    /* Estilos para o ícone */
+    .material-symbols-outlined {
+        font-size: 24px;
+    }
+    
+    /* Estilos para o título */
+    .card-title {
+        margin: 0;
+    }
+    
+    /* Estilos para a descrição */
+    .card-description {
+        margin: 0;
+    }
+    
+    /* Estilos para o botão */
+    .cta {
+        padding: 10px 20px;
+        background-color: var(--white);
+        color: var(--primary-color);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .saiba-mais {
+        text-align: center;
+        grid-column: 1 / -1;
+    } 
+}

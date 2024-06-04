@@ -43,3 +43,27 @@
     color: var(--black);
 }
 
+@media (min-width: 481px) and (max-width: 1023px) {
+    h4 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+    .cta-about {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper-slide img {
+        width: 500px;
+        height: 400px
+        
+    }
+
+    .swiper-slide h4 {
+        font-size: 2rem;
+    }
+}

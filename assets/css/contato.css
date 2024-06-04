@@ -20,3 +20,22 @@
     margin: .5rem 0;
     font-size: 1.3rem;
 }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .contato h5 {
+        font-size: 1.5rem;
+    }
+
+    .telefone-opcoes span {
+        font-size: 1.5rem;
+    }
+
+    .telefone-opcoes p {
+        font-size: 1.2rem;
+    }
+
+    .ouvidoria {
+        display: flex;
+        flex-direction: column;
+    }
+}

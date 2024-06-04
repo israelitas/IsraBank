@@ -51,4 +51,31 @@
     color: var(--primary-color);
 }
 
+@media (min-width: 481px) and (max-width: 1023px) {
+    .about {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 3rem
+    }
+}
 
+@media screen and (min-width:1024px) {
+    .card-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-about img {
+        height: 400px;
+        width: 800px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-about p {
+        text-align: center;
+    }
+}
