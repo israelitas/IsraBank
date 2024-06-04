@@ -1,7 +1,7 @@
 .vire-isra {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
-    height: 60vh; /* Altura total da viewport para centralização vertical */
+    height: 40vh; /* Altura total da viewport para centralização vertical */
 }
 
 .vire-isra h4,
