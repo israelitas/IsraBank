@@ -1,0 +1,104 @@
+.vire-isra {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    height: 60vh; /* Altura total da viewport para centralização vertical */
+}
+
+.vire-isra h4,
+.vire-isra button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Alinhamento do texto */
+    
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    margin:4rem
+}
+
+.vire-isra h4 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.vire-isra div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vire-isra div img {
+    width: 500px;
+    position: relative;
+    top: 16px;
+    left:70px
+}
+
+.vire-isra button {
+    height: 4rem;
+    width: 300px;
+    margin: auto;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.vire-isra button:hover {
+    background-color: orange;
+}
+
+.vire-isra button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* celular */
+@media (max-width: 480px) {
+    .vire-isra {
+        grid-template-columns: 1fr; /* Uma coluna em vez de duas */
+        height: auto; /* Altura automática para ajustar ao conteúdo */
+    }
+
+    .vire-isra h4 {
+        margin: 1rem; /* Margens menores para telas pequenas */
+        padding: 1rem; /* Espaçamento interno menor */
+    }
+
+    .vire-isra button {
+        margin-bottom: 2rem;
+        width: fit-content;
+    }
+
+    .vire-isra h4 {
+        font-size: 1.2rem; /* Tamanho de fonte menor para melhor ajuste */
+        text-align: center; /* Centralizar texto para melhor legibilidade */
+    }
+
+    .vire-isra div img {
+        display: none;
+    }
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .vire-isra {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        height: 33vh;
+    }
+
+    .vire-isra h5 {
+        text-align: center;
+    }
+
+    .vire-isra div img {
+        display: none;
+    }
+
+
+}
