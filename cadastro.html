@@ -3,9 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/Isra.png" type="image/x-icon">
     <title>IsraBank | Cadastro</title>
 </head>
 <body>
-    
+    <header id="inicio">
+        <nav class="nav-bar">
+            <div class="logo">
+                <p><span>Isra</span>Bank</p>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#cards" class="nav-link">Seviços</a></li>
+                    <li class="nav-item"><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <div class="buttons">
+                <div class="login-button">
+                    <button><a href="login.html">Entrar</a></button>
+                </div>
+                <div class="login-button">
+                    <button><a href="#">Vire um <span>Isra</span></a></button>
+                </div>
+            </div>
+
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#cards" class="nav-link">Seviços</a></li>
+                <li class="nav-item"><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Vire um Isra</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="cadastro">
+        <div class="cadastro-titulo"> 
+            <h1>Cadastre-se e comece hoje mesmo a aproveitar as vantagens de ser um <span>IsraCliente.</span></h1>
+        </div>
+        <h4>Novo cadastro</h4>
+        <form action="">
+            <label for="name">Nome Completo</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome completo" required>
+            
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Digite seu email" required>
+
+            <label for="email">CPF</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required>
+
+            <label for="email">Data de nascimento</label>
+            <input type="date" name="date" id="date" placeholder="Digite seu email" required>
+
+            <label for="email">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+            <div class="termos-condicoes">
+                <input type="checkbox" name="termos-condicoes" id="termos-condicoes" required>
+                <label for="termos-condicoes">Aceito os <a href="#">termos e condições</a></label>
+            </div>
+
+            <button class="btn-cadastro" type="submit"><a href="#">Cadastrar</a></button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="news" id="contato">
+            <h5>Increva-se na nossa newsletter e fique sabendo de todas as novidades:</h5>
+            <form id="newsletterForm">
+                <input type="email" id="emailInput" placeholder="Digite seu email">
+                <button type="submit" id="subscribeButton" disabled>Inscreva-se</button>
+            </form>
+
+            <div class="contato">
+                <div class="telefones">
+                    <h5>Fale com a gente</h5>
+                    <div class="telefone-opcoes">
+                        <span>Capitais e regiões metropolitanas</span>
+                        <p>4002 8922</p>
+                        <span>Demais localidades</span>
+                        <p>0800 634 2118</p>
+                        <span>meajuda@israbank.com.br</span>
+                    </div>
+                    <h5 class="ouvidoria">
+                        <span>0800 856 2812</span>
+                        <span>ouvidoria@israbank.com.br</span>
+                    </h5>
+                </div>
+                
+                <div class="sociais">
+                    <p>Nossas redes sociais:</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/1917902a76.js" crossorigin="anonymous"></script>
 </body>
 </html>
